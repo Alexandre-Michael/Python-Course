@@ -1,6 +1,9 @@
 #Python Curse
 
 
+print("AVISO PRÉVIO!!!")
+print("PARA ENTENDER O CONTEÚDO VC DEVE ABRIR O CODIGO NUMA IDE PARA VER OS COMENTARIOS\n")
+
     #Dicas
 
     # %s"% e +
@@ -15,9 +18,12 @@
 
     #Usando o print
 
-print("Hello World")
+print("-----------------------------------------\n")
+
+print("Hello World\n")
 
 #Um triangulo
+
 
 print("   /|")
 print("  / |")
@@ -25,6 +31,8 @@ print(" /  |")
 print("/___|\n")
 
     #Aprendendo a usar variaveis 
+
+print("-----------------------------------------\n")
 
 nome_pessoa = "Jorge"
 idade_pessoa = "70"
@@ -43,6 +51,8 @@ print("Mas não gostava de ter ", idade_pessoa, " anos\n")
 
     #True false and not
 
+print("-----------------------------------------\n")
+
 status_assinatura = True
 print("Assinatura Netflix: %s"% status_assinatura)
 
@@ -59,10 +69,14 @@ print("Assinatura Netflix: %s"% status_assinatura, "\n")
 
 #número ao contrario
 
+print("-----------------------------------------\n")
+
+print("Invertendo números")
+
 num = int(input("Informe um número de 2 digitos: "))
 dezena = num // 10
 unidade = num % 10
-print(f"Número Invertido: {unidade} {dezena}\n")
+print(f"Número Invertido: {unidade} {dezena}")
 
 #Média Notas
 
@@ -80,6 +94,10 @@ print("A média das notas é: ", media,"\n")
 
 #Impar ou Par
 
+print("-----------------------------------------\n")
+
+print("Descubra se o número é Impar ou par")
+
 num = int(input("Informe um número: "))
 
 if (num % 2 == 0):
@@ -88,6 +106,8 @@ else:
     print(num, " é IMPAR\n")
 
 #Salário
+
+print("-----------------------------------------\n")
 
 salario = float(input("Digite o salário base do funcionário: "))
 tempo = int(input("Digite o tempo de empresa do funcionário (em anos): "))
@@ -102,20 +122,28 @@ else:
 
 novo_salario = salario * (1 + aumento)
 
-print("O novo salário do funcionário será: R$%.2f" % novo_salario)
+print("O novo salário do funcionário será: R$%.2f" % novo_salario, "\n")
 
-#represente um dos 7 dias da semana e imprima se esse dia é úti##l, fim de semana ou inválido.
+#represente um dos 7 dias da semana e imprima se esse dia é útil, fim de semana ou inválido.
+
+print("-----------------------------------------\n")
 
 dia = int(input("Digite um número inteiro representando um dia da semana (1 a 7): "))
 
 # Verificação do dia
 if dia == 1:  # Domingo
-    print("Fim de semana")
+    print("Fim de semana\n")
 else:
     if dia == 7:  # Sábado
-        print("Fim de semana")
+        print("Fim de semana\n")
     else:
-        if 2 == dia == 6:  # Segunda a Sexta
-            print("Dia útil")
+        if 2 <= dia <= 6:  # Segunda a Sexta
+            print("Dia útil\n")
         else:
-            print("Dia inválido")
+            print("Dia inválido\n")
+
+print("-----------------------------------------\n")
+
+#Faça um codigo que gere 10 números (até 20) e informe o percentual de numeros multiplos de 5 
+# e percental de numeros impares e os divisores do maior numero
+
